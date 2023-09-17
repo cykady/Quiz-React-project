@@ -1,0 +1,135 @@
+body{
+  position: relative;
+  margin: 0 auto;
+}
+#root {
+  width: 550px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: start;
+}
+.first-page{
+  text-align: center;
+  color: #293264;
+  margin-top: 50%;
+}
+h1 {
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+p{
+  margin-bottom: 4rem;
+}
+.start-btn{
+  background-color: #4D5B9E;
+  border: none;
+  color: white;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 15px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.check-answers-btn{
+  margin-left: 65%;
+  padding: 1em 2em;
+}
+.play-again-btn{
+  padding: 1em 2em;
+}
+form{
+  display: flex;
+}
+input{
+  display: none; 
+}
+
+h5{
+  color: #293264;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
+  font-family: Karla;
+}
+label{
+  font-weight: 700;
+  font-size: 0.64em;
+  color: #293264;
+  border-radius: 10px;
+  padding: 0.45em 1.953125em;
+  border: 0.794px solid #4D5B9E;
+  margin: 13px;
+  text-align: center;
+}
+.selected{
+  background-color: #D6DBF5;
+  border: none;
+}
+.nonSelected{
+  opacity: 0.5;
+  color: #295964;
+}
+.corect{
+  background-color: #94D7A2;
+  border: none;
+}
+.incorect{
+  background-color: #F8BCBC;
+  border: none;
+  opacity: 0.5;
+}
+hr{
+  border: 1px solid #DBDEF0;
+  margin: 1.25rem 0;
+}
+.score{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.blue{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 297px;
+  height: 235px;
+}
+.yellow{
+  position: fixed;
+  top: 0px;
+  right: 0;
+  width: 297px;
+  height: 235px;
+}
+@media(max-width: 1200px){
+  .blue{
+    width: calc(297px/2);
+    height: calc(235px/2);
+  }
+  .yellow{
+    width: calc(297px/2);
+    height: calc(235px/2);
+  }
+}
+@media(max-width: 1000px){
+  .blue{
+    width: calc(297px/3);
+    height: calc(235px/3);
+  }
+  .yellow{
+    width: calc(297px/3);
+    height: calc(235px/3);
+  }
+}
+@media(max-width: 700px){
+  .blue{
+    display: none;
+  }
+  .yellow{
+    display: none;
+  }
+}
